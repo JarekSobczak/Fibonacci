@@ -1,13 +1,13 @@
 package com.sda.exercises;
 
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        Long[] longs = Fibonacci.arrayCreate(12);
-
-        for (Long i : longs) {
-            System.out.print(i + " ");
-        }
+        Arrays.stream(Fibonacci.arrayCreate(23))
+                .forEach(li-> System.out.print(li+" "));
 
 
     }
